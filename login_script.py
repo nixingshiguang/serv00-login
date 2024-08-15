@@ -133,7 +133,7 @@ async def send_telegram_message(message):
 
 
 async def send_qywxbot_message(message):
-    url = QYWXBOT_KEY
+    url = f'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={QYWXBOT_KEY}'
     payload = {
         "msgtype": "text",
         "text": {
